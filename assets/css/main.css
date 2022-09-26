@@ -1,3 +1,6 @@
+body {
+  background-color: #EAF6F6;
+}
 
 :root {
   scroll-behavior: smooth;
@@ -225,7 +228,7 @@ section {
 }
 
 .header.sticked {
-  background: var(--color-white);
+  background: #d9e4ef;
   box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
 }
 
@@ -1129,6 +1132,8 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
+  text-align: center;
+  background-color: aliceblue;
 }
 
 .featured-services .service-item .icon {
@@ -2413,7 +2418,6 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: var(--color-white);
 }
 
 .contact .php-email-form .form-group {
@@ -3328,3 +3332,14 @@ section {
   background: var(--color-primary);
   text-decoration: none;
 }
+
+
+.home-ideas-strong-font {
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+}
+.home-ideas-normal-font {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+}
+
