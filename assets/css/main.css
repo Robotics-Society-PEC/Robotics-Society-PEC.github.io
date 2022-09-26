@@ -1184,7 +1184,7 @@ section {
 
 .about-img {
   position: relative;
-  margin: 0 0 0 60px;
+  margin: 0 30px 0 30px;
 }
 
 .about-img:before {
@@ -1199,8 +1199,9 @@ section {
 
 @media (max-width: 575px) {
  .about-img {
-    margin: 30px 0 0 30px;
+    margin: 30px 15px 0 15px;
     height: auto;
+    max-width: 300px;
   }
 
   .about-img:before {
@@ -2509,7 +2510,13 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
-  height: 290px;
+  height: 209px;
+}
+@media (max-width: 992px) {
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+    height: 120px;
+  }
 }
 
 .contact .php-email-form button[type=submit] {
@@ -2544,6 +2551,8 @@ section {
     transform: rotate(360deg);
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
