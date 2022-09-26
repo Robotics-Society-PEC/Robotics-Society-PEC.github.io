@@ -6,6 +6,10 @@ body {
   scroll-behavior: smooth;
 }
 
+/* .row {
+  justify-content: center;
+} */
+
 a {
   color: var(--color-links);
   text-decoration: none;
@@ -24,6 +28,9 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -89,6 +96,7 @@ h6 {
     opacity: 0;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -1739,7 +1747,7 @@ section {
 --------------------------------------------------------------*/
  .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  /* background: url("../img/testimonials-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1749,7 +1757,48 @@ section {
   content: "";
   position: absolute;
   inset: 0;
+  /* background: rgba(var(--color-secondary-dark-rgb), 0.8); */
+}
+
+/* changes */
+
+/* #testimonials {
   background: rgba(var(--color-secondary-dark-rgb), 0.8);
+  border-radius: 30%;
+  height: 200px;
+} */
+
+/* .testimonials::before {
+  border-radius: 15%;
+} */
+
+/* .testimonials image {
+  height: 20px;
+  width: 320px;
+} */
+
+.testimonial-text {
+  color: #a3691c;
+  padding: 20px 20px;
+}
+
+.testimonials img {
+  height: auto;
+  width: 100%;
+  border-radius: 2%;
+}
+
+/* @media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+} */
+
+@media (min-width: 800px) {
+  .testimonials-image {
+    max-width: 40%;
+    height: auto;
+  }
 }
 
 /*
@@ -1773,7 +1822,8 @@ section {
   border-radius: 50%;
   border: 6px solid rgba(var(--color-white-rgb), 0.15);
   margin: 0 auto;
-}
+  /* height: 200px; */
+/* } */
 
 .testimonials .testimonial-item h3 {
   font-size: 20px;
@@ -1808,6 +1858,9 @@ section {
   display: inline-block;
   left: -5px;
   position: relative;
+  color: black;
+  background-color: #a3691c;
+  background: red;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
@@ -1815,7 +1868,7 @@ section {
   right: -5px;
   position: relative;
   top: 10px;
-  transform: scale(-1, -1);
+  /* transform: scale(-1, -1); */
 }
 
 .testimonials .testimonial-item p {
@@ -1838,7 +1891,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-white);
   opacity: 1;
-} */
+} 
 
 /* #testimonials{
   background: rgba(var(--color-secondary-dark-rgb), 0.8);
@@ -1848,12 +1901,13 @@ section {
   position: relative;
 } */
 
-@media (min-width: 992px) {
+ @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
   }
 
 }
+
 
 /*--------------------------------------------------------------
 # Pricing Section
