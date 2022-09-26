@@ -6,9 +6,9 @@ body {
   scroll-behavior: smooth;
 }
 
-/* .row {
+.row {
   justify-content: center;
-} */
+}
 
 a {
   color: var(--color-links);
