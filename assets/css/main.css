@@ -275,7 +275,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Desktop Navigation 
+# Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
@@ -1175,27 +1175,42 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-img {
-  position: relative;
-  margin: 60px 0 0 60px;
+.about{
+  padding-bottom: 0;
 }
 
-.about .about-img:before {
+.about-logo{
+  float: left;
+  margin: 0 25px;
+}
+
+.about-img {
+  position: relative;
+  margin: 0 0 0 60px;
+}
+
+.about-img:before {
   position: absolute;
   inset: -60px 0 0 -60px;
   z-index: -1;
   content: "";
-  background: url("../img/about-bg.png") top left;
-  background-repeat: no-repeat;
+  /* background: url("../img/about-bg.png") top left; */
+  /* background-repeat: no-repeat; */
+  height: 50px;
 }
 
 @media (max-width: 575px) {
-  .about .about-img {
+ .about-img {
     margin: 30px 0 0 30px;
+    height: auto;
   }
 
-  .about .about-img:before {
+  .about-img:before {
     inset: -30px 0 0 -30px;
+  }
+  .about-logo{
+    float: none;
+    margin: auto;
   }
 }
 
@@ -1245,10 +1260,11 @@ section {
 }
 
 .about .tab-content h4 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   font-weight: 700;
   color: var(--color-secondary);
+  line-height: 1.5;
 }
 
 .about .tab-content i {
@@ -1281,6 +1297,7 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 0;
+  margin-top:120px;
   margin-bottom: 60px;
 }
 
@@ -1720,7 +1737,7 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials {
+ .testimonials {
   padding: 80px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
@@ -1734,6 +1751,8 @@ section {
   inset: 0;
   background: rgba(var(--color-secondary-dark-rgb), 0.8);
 }
+
+/*
 
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -1819,12 +1838,21 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-white);
   opacity: 1;
-}
+} */
+
+/* #testimonials{
+  background: rgba(var(--color-secondary-dark-rgb), 0.8);
+  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+} */
 
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -2145,9 +2173,16 @@ section {
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+
+
+.team-member{
+  height: 400px;
+}
+
 .team .team-member .member-img {
   border-radius: 8px;
   overflow: hidden;
+  height: 75%;
 }
 
 .team .team-member .social {
@@ -2160,6 +2195,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .team .team-member .social a {
@@ -2223,6 +2259,28 @@ section {
 
 .team .team-member:hover .social {
   opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .team-member{
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .team .team-member .member-img {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 75%;
+    width: 100%;
+    position: relative;
+  }
+  .team-box{
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 43%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -3112,6 +3170,7 @@ section {
 .footer {
   color: var(--color-white);
   font-size: 14px;
+  text-align: center;
 }
 
 .footer .footer-content {
@@ -3274,6 +3333,7 @@ section {
   text-decoration: none;
 }
 
+
 .home-ideas-strong-font {
   font-family: 'Roboto Slab', serif;
   font-size: 17px;
@@ -3282,3 +3342,4 @@ section {
   font-family: 'Noto Serif', serif;
   font-size: 16px;
 }
+
