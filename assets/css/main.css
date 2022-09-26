@@ -1,10 +1,10 @@
-body {
-  background-color: #EAF6F6;
-}
-
 :root {
   scroll-behavior: smooth;
 }
+
+/* .row {
+  justify-content: center;
+} */
 
 a {
   color: var(--color-links);
@@ -24,6 +24,9 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -90,6 +93,7 @@ h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -105,7 +109,7 @@ section {
 
 .section-header h2 {
   font-size: 48px;
-  font-family: 'Noto Serif';
+  font-weight: 300;
   margin-bottom: 20px;
   color: var(--color-secondary);
 }
@@ -228,7 +232,7 @@ section {
 }
 
 .header.sticked {
-  background: #d9e4ef;
+  background: var(--color-white);
   box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
 }
 
@@ -275,7 +279,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Desktop Navigation
+# Desktop Navigation 
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
@@ -1132,8 +1136,6 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
-  text-align: center;
-  background-color: aliceblue;
 }
 
 .featured-services .service-item .icon {
@@ -1175,42 +1177,27 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about{
-  padding-bottom: 0;
-}
-
-.about-logo{
-  float: left;
-  margin: 0 25px;
-}
-
-.about-img {
+.about .about-img {
   position: relative;
-  margin: 0 0 0 60px;
+  margin: 60px 0 0 60px;
 }
 
-.about-img:before {
+.about .about-img:before {
   position: absolute;
   inset: -60px 0 0 -60px;
   z-index: -1;
   content: "";
-  /* background: url("../img/about-bg.png") top left; */
-  /* background-repeat: no-repeat; */
-  height: 50px;
+  background: url("../img/about-bg.png") top left;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 575px) {
- .about-img {
+  .about .about-img {
     margin: 30px 0 0 30px;
-    height: auto;
   }
 
-  .about-img:before {
+  .about .about-img:before {
     inset: -30px 0 0 -30px;
-  }
-  .about-logo{
-    float: none;
-    margin: auto;
   }
 }
 
@@ -1260,11 +1247,10 @@ section {
 }
 
 .about .tab-content h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   font-weight: 700;
   color: var(--color-secondary);
-  line-height: 1.5;
 }
 
 .about .tab-content i {
@@ -1297,7 +1283,6 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 0;
-  margin-top:120px;
   margin-bottom: 60px;
 }
 
@@ -1737,9 +1722,9 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
- .testimonials {
+.testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  /* background: url("../img/testimonials-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1749,10 +1734,51 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(var(--color-secondary-dark-rgb), 0.8);
+  /* background: rgba(var(--color-secondary-dark-rgb), 0.8); */
 }
 
-/*
+/* changes */
+
+/* #testimonials {
+  background: rgba(var(--color-secondary-dark-rgb), 0.8);
+  border-radius: 30%;
+  height: 200px;
+} */
+
+/* .testimonials::before {
+  border-radius: 15%;
+} */
+
+/* .testimonials image {
+  height: 20px;
+  width: 320px;
+} */
+
+.testimonial-text {
+  color: #a3691c;
+  padding: 20px 20px;
+}
+
+.testimonials img {
+  height: auto;
+  width: 100%;
+  border-radius: 2%;
+}
+
+/* @media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+} */
+
+@media (min-width: 800px) {
+  .testimonials-image {
+    max-width: 40%;
+    height: auto;
+  }
+}
+
+/* changes */
 
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -1773,6 +1799,7 @@ section {
   border-radius: 50%;
   border: 6px solid rgba(var(--color-white-rgb), 0.15);
   margin: 0 auto;
+  /* height: 200px; */
 }
 
 .testimonials .testimonial-item h3 {
@@ -1808,6 +1835,9 @@ section {
   display: inline-block;
   left: -5px;
   position: relative;
+  color: black;
+  background-color: #a3691c;
+  background: red;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
@@ -1815,7 +1845,7 @@ section {
   right: -5px;
   position: relative;
   top: 10px;
-  transform: scale(-1, -1);
+  /* transform: scale(-1, -1); */
 }
 
 .testimonials .testimonial-item p {
@@ -1838,21 +1868,12 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-white);
   opacity: 1;
-} */
-
-/* #testimonials{
-  background: rgba(var(--color-secondary-dark-rgb), 0.8);
-  background: url("../img/testimonials-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-} */
+}
 
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -2173,16 +2194,9 @@ section {
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-
-
-.team-member{
-  height: 400px;
-}
-
 .team .team-member .member-img {
   border-radius: 8px;
   overflow: hidden;
-  height: 75%;
 }
 
 .team .team-member .social {
@@ -2195,7 +2209,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .team .team-member .social a {
@@ -2259,28 +2272,6 @@ section {
 
 .team .team-member:hover .social {
   opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .team-member{
-    height: 80%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .team .team-member .member-img {
-    border-radius: 8px;
-    overflow: hidden;
-    height: 75%;
-    width: 100%;
-    position: relative;
-  }
-  .team-box{
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    width: 43%;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -2418,6 +2409,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
+  background: var(--color-white);
 }
 
 .contact .php-email-form .form-group {
@@ -3170,7 +3162,6 @@ section {
 .footer {
   color: var(--color-white);
   font-size: 14px;
-  text-align: center;
 }
 
 .footer .footer-content {
@@ -3332,14 +3323,3 @@ section {
   background: var(--color-primary);
   text-decoration: none;
 }
-
-
-.home-ideas-strong-font {
-  font-family: 'Roboto Slab', serif;
-  font-size: 17px;
-}
-.home-ideas-normal-font {
-  font-family: 'Noto Serif', serif;
-  font-size: 16px;
-}
-
