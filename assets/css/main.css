@@ -1175,9 +1175,12 @@ section {
 }
 
 .about-logo{
-  float: left;
-  margin: 0 25px;
+  position: relative;
+  width: 80%;
+  margin: 25px 25px;
 }
+
+
 
 .about-img {
   position: relative;
@@ -1269,6 +1272,20 @@ section {
   color: var(--color-primary);
 }
 
+
+@media (max-width : 998px ) {
+  .about-logo-box{
+    width: 80%;
+    max-height:150px;
+    position: relative;
+    text-align: center;
+  }
+  .about-logo{
+    max-height: 120px;
+    width: auto;
+
+  }
+}
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -2258,10 +2275,12 @@ section {
 
 @media (max-width: 992px) {
   .team-member{
-    height: 80%;
+    /* height: 80%; */
+    max-height: 300px;
     width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .team .team-member .member-img {
     border-radius: 8px;
@@ -2275,6 +2294,12 @@ section {
     justify-content: center;
     padding: 5px;
     width: 43%;
+  }
+  .team .team-member .member-info{
+    margin: -50px 5px 0 5px;
+    position: relative;
+    padding: 0 0;
+    text-align: center;
   }
 }
 
