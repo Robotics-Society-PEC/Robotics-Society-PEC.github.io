@@ -105,7 +105,7 @@ section {
 
 .section-header h2 {
   font-size: 48px;
-  font-weight: 300;
+  font-family: 'Noto Serif';
   margin-bottom: 20px;
   color: var(--color-secondary);
 }
