@@ -1183,11 +1183,11 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about{
+.about {
   padding-bottom: 0;
 }
 
-.about-logo{
+.about-logo {
   position: relative;
   width: 80%;
   margin: 25px 25px;
@@ -1211,7 +1211,7 @@ section {
 }
 
 @media (max-width: 575px) {
- .about-img {
+  .about-img {
     margin: 30px 15px 0 15px;
     height: auto;
     max-width: 300px;
@@ -1220,7 +1220,8 @@ section {
   .about-img:before {
     inset: -30px 0 0 -30px;
   }
-  .about-logo{
+
+  .about-logo {
     float: none;
     margin: auto;
   }
@@ -1287,19 +1288,21 @@ section {
 }
 
 
-@media (max-width : 998px ) {
-  .about-logo-box{
+@media (max-width : 998px) {
+  .about-logo-box {
     width: 80%;
-    max-height:150px;
+    max-height: 150px;
     position: relative;
     text-align: center;
   }
-  .about-logo{
+
+  .about-logo {
     max-height: 120px;
     width: auto;
 
   }
 }
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -1323,7 +1326,7 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 0;
-  margin-top:120px;
+  margin-top: 120px;
   margin-bottom: 60px;
 }
 
@@ -1763,8 +1766,8 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
- .testimonials {
-  padding: 80px 0;
+.testimonials {
+  padding: 50px 200px;
   /* background: url("../img/testimonials-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
@@ -1919,7 +1922,7 @@ section {
   position: relative;
 } */
 
- @media (min-width: 992px) {
+@media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
   }
@@ -2247,13 +2250,13 @@ section {
 --------------------------------------------------------------*/
 
 
-.team-member{
+.team-member {
   height: 400px;
   margin: auto;
 }
 
- .team-member .member-img {
-   text-align: center;
+.team-member .member-img {
+  text-align: center;
   border-radius: 8px;
   overflow: hidden;
   height: 75%;
@@ -2272,7 +2275,7 @@ section {
 
 }
 
- .team-member .social a {
+.team-member .social a {
   transition: color 0.3s;
   color: var(--color-white);
   background: var(--color-primary);
@@ -2286,21 +2289,21 @@ section {
   transition: 0.3s;
 }
 
- .team-member .social a i {
+.team-member .social a i {
   line-height: 0;
   font-size: 16px;
 }
 
- .team-member .social a:hover {
+.team-member .social a:hover {
   background: var(--color-primary-light);
 }
 
- .team-member .social i {
+.team-member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
 
- .team-member .member-info {
+.team-member .member-info {
   padding: 30px 15px;
   text-align: center;
   box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
@@ -2310,33 +2313,33 @@ section {
   border-radius: 8px;
 }
 
- .team-member .member-info h4 {
+.team-member .member-info h4 {
   font-weight: 400;
   margin-bottom: 5px;
   font-size: 24px;
   color: var(--color-secondary);
 }
 
- .team-member .member-info span {
+.team-member .member-info span {
   display: block;
   font-size: 16px;
   font-weight: 400;
   color: var(--color-gray);
 }
 
- .team-member .member-info p {
+.team-member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
   color: var(--color-gray);
 }
 
- .team-member:hover .social {
+.team-member:hover .social {
   opacity: 1;
 }
 
 @media (max-width: 992px) {
-  .team-member{
+  .team-member {
     /* height: 80%; */
     max-height: 300px;
     width: 100%;
@@ -2344,20 +2347,23 @@ section {
     justify-content: center;
     text-align: center;
   }
- .team-member .member-img {
+
+  .team-member .member-img {
     border-radius: 8px;
     overflow: hidden;
     height: 75%;
     width: 100%;
     position: relative;
   }
-  .team-box{
+
+  .team-box {
     align-items: center;
     justify-content: center;
     padding: 5px;
     width: 43%;
   }
- .team-member .member-info{
+
+  .team-member .member-info {
     margin: -50px 5px 0 5px;
     position: relative;
     padding: 0 0;
@@ -2369,19 +2375,34 @@ section {
 /*--------------------------------------------------------------
 # special Mentions
 --------------------------------------------------------------*/
-.specialMentions .img-fluid{
-   height: -webkit-fill-available;
-    /* max-width: 67%; */
+.specialMentions .img-fluid {
+  height: -webkit-fill-available;
+  /* max-width: 67%; */
 }
 
-.specialMentions .team-member .member-info{
-      width: 100%;
-      margin: -50px auto 0 auto;
+.specialMentions .team-member .member-info {
+  width: 100%;
+  margin: -50px auto 0 auto;
 }
 
-.thanks{
+.thanks {
   margin: 70px auto 0 auto;
   text-align: -webkit-center;
+}
+
+/*--------------------------------------------------------------
+# Sponsors
+--------------------------------------------------------------*/
+.sponsor-img {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.img2 {
+  height: 100%;
+  margin-top: 180px;
+  padding-top: 72px
 }
 
 /*--------------------------------------------------------------
@@ -2591,6 +2612,7 @@ section {
   padding: 10px 12px;
   height: 209px;
 }
+
 @media (max-width: 992px) {
   .contact .php-email-form textarea {
     padding: 10px 12px;
@@ -3447,6 +3469,7 @@ section {
   font-family: 'Roboto Slab', serif;
   font-size: 17px;
 }
+
 .home-ideas-normal-font {
   font-family: 'Noto Serif', serif;
   font-size: 16px;
