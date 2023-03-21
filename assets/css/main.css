@@ -1767,7 +1767,7 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 50px 200px;
+  padding: 50px 20px;
   /* background: url("../img/testimonials-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
@@ -2393,16 +2393,48 @@ section {
 /*--------------------------------------------------------------
 # Sponsors
 --------------------------------------------------------------*/
-.sponsor-img {
-  display: inline-flex;
-  justify-content: space-between;
-  margin: 100px;
+
+.sponsor-1 {
+  width: 30%;
 }
 
-.img2 {
-  height: 100%;
-  margin-top: 180px;
-  padding-top: 72px
+.sponsor-2 {
+  /* width: 90%; */
+  margin: auto 0;
+}
+
+.sponsor-img {
+  display: inline-flex;
+  margin: 20px;
+}
+
+.img-container {
+  padding: auto;
+  display: block;
+}
+
+@media (min-width:768px) {
+
+  .sponsor-1 {
+    margin: 20px 20px -50px 40px;
+  }
+
+  .sponsor-2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:768px) {
+
+  .sponsor-1 {
+    margin-left: 180px;
+  }
+
+  .sponsor-2 {
+    margin-left: 100px;
+    width: 60%;
+  }
 }
 
 /*--------------------------------------------------------------
