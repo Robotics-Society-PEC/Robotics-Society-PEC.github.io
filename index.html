@@ -37,7 +37,7 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
 
-
+  <script src="https://kit.fontawesome.com/11f77320ca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -585,57 +585,62 @@
               </a>
             </li><!-- End Tab 3 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
-                <i class="bi bi-map color-orange"></i>
-                <h4>TechnoXian</h4>
-              </a>
-            </li><!-- End Tab 6 Nav -->
+            <div class=" row collapse" id="collapseExample">
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+                  <i class="bi bi-map color-orange"></i>
+                  <h4>TechnoXian</h4>
+                </a>
+              </li><!-- End Tab 6 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
-                <i class="bi bi-car-front-fill color-gray"></i>
-                <h4>Roborace</h4>
-              </a>
-            </li><!-- End Tab 7 Nav -->
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
+                  <i class="bi bi-car-front-fill color-gray"></i>
+                  <h4>Roborace</h4>
+                </a>
+              </li><!-- End Tab 7 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-8">
-                <i class="bi bi-robot color-red"></i>
-                <h4>Robowar</h4>
-              </a>
-            </li><!-- End Tab 8 Nav -->
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-8">
+                  <i class="bi bi-robot color-red"></i>
+                  <h4>Robowar</h4>
+                </a>
+              </li><!-- End Tab 8 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                <i class="bi bi-binoculars color-cyan"></i>
-                <h4>Independence Day Event</h4>
-              </a>
-            </li><!-- End Tab 1 Nav -->
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                  <i class="bi bi-binoculars color-cyan"></i>
+                  <h4>Independence Day Event</h4>
+                </a>
+              </li><!-- End Tab 1 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-9">
-                <i class="bi bi-printer color-gray"></i>
-                <h4>3D Printing Workshop</h4>
-              </a>
-            </li><!-- End Tab 9 Nav -->
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-9">
+                  <i class="bi bi-printer color-gray"></i>
+                  <h4>3D Printing Workshop</h4>
+                </a>
+              </li><!-- End Tab 9 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-10">
-                <i class="bi bi-github"></i>
-                <h4>Github Workshop</h4>
-              </a>
-            </li><!-- End Tab 10 Nav -->
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-10">
+                  <i class="bi bi-github"></i>
+                  <h4>Github Workshop</h4>
+                </a>
+              </li><!-- End Tab 10 Nav -->
 
-            <li class="nav-item col-6 col-md-4 col-lg-2">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-11">
-                <i class="bi bi-linkedin color-blue"></i>
-                <h4>LinkedIn Workshop</h4>
-              </a>
-            </li><!-- End Tab 11 Nav -->
-
+              <li class="nav-item col-6 col-md-4 col-lg-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-11">
+                  <i class="bi bi-linkedin color-blue"></i>
+                  <h4>LinkedIn Workshop</h4>
+                </a>
+              </li><!-- End Tab 11 Nav -->
+            </div>
           </ul>
-
+          
+          <div style="text-align: center; padding-top: 2rem; padding-bottom: 2rem;">
+            <button class="btn btn-light btn-lg" id="myBtn" onclick="change()" value="1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-circle-chevron-down fa-xl" style="color: #0ea2bd;"></i></button>
+          </div>
+          
           <div class="tab-content">
 
             <div class="tab-pane active show" id="tab-1">
