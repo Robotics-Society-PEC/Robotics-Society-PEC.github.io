@@ -291,3 +291,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/****** Toggling of Event Button
+ ************/
+
+function change() {
+  if(document.getElementById("myBtn").value == "1") {
+    document.getElementById("myBtn").value = "0";
+    document.getElementById("myBtn").innerHTML = "<i class='fa-solid fa-circle-chevron-up fa-xl' style='color: #0ea2bd;'></i>";
+  } else {
+    document.getElementById("myBtn").value = "1";
+    document.getElementById("myBtn").innerHTML = "<i class='fa-solid fa-circle-chevron-down fa-xl' style='color: #0ea2bd;'></i>";
+  }
+}
