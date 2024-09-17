@@ -25,6 +25,34 @@ In the upcoming version of the website, you will find:
 
 This repository is open to contributions. If you're interested in helping us improve the website, feel free to fork this repository and submit a pull request. Whether it's design improvements, content suggestions, or bug fixes, all contributions are welcome!
 
+To Run on Local machine :
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Robotics-Society-PEC/Robotics-Society-PEC.github.io
+```
+
+2. Change directory to the Cloned Repository
+
+```bash
+cd Robotics-Society-PEC.github.io
+```
+
+3. Install necessary packages
+
+```bash
+npm install
+```
+
+4. Run the Website on the local machine
+
+```bash
+npm run dev
+```
+
+Now you can access `localhost:3000` in your browser to have a look at the website.
+
 ## 📬 Contact Us
 
 If you have any queries or ideas, feel free to reach out to us through:
