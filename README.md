@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Robotics Society PEC Official Website
 
-## Getting Started
+Welcome to the **official GitHub repository** for the **Robotics Society PEC** website!
 
-First, run the development server:
+## 🚧 Website Under Construction 🚧
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Please note that this website is currently under active development and construction. We are working hard to build an engaging, informative, and user-friendly platform to showcase the exciting projects, initiatives, and achievements of the Robotics Society at PEC.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Stay tuned for updates as we continue to enhance the site!
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📚 About Robotics Society PEC
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The **Robotics Society PEC** is a passionate group of students and mentors dedicated to advancing knowledge and hands-on experience in the fields of robotics, automation, electronics, and artificial intelligence. Our society provides a platform for students to collaborate, innovate, and create cutting-edge robotic solutions to real-world problems.
 
-## Learn More
+## 🚀 What to Expect
 
-To learn more about Next.js, take a look at the following resources:
+In the upcoming version of the website, you will find:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Information about ongoing projects
+- Details on upcoming events and workshops
+- A showcase of past projects and research work
+- Opportunities for collaboration and membership
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 💻 Contributing
 
-## Deploy on Vercel
+This repository is open to contributions. If you're interested in helping us improve the website, feel free to fork this repository and submit a pull request. Whether it's design improvements, content suggestions, or bug fixes, all contributions are welcome!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact Us
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any queries or ideas, feel free to reach out to us through:
+
+- Email: [robotics@pec.edu.in](mailto:robotics@pec.edu.in)
+- Lindein: [Robotics Society PEC, Linkedin](https://www.linkedin.com/company/pec-robotics-society/posts/?feedView=all)
+- Instagram: [robotics.society](https://www.instagram.com/robotics.society/)
+
+---
+
+Stay connected with us for the latest updates and announcements. Together, let's build something amazing!
