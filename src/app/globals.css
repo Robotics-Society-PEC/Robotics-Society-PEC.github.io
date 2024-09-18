@@ -25,3 +25,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.main-heading {
+  font-size: 6rem;
+  line-height: 100%;
+  /* margin-top: 5rem; */
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.accent-description {
+  @apply text-accent-blue italic
+}

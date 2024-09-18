@@ -19,7 +19,7 @@ import {
 
 function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
 
   const menuItems = [
     "Profile",
@@ -38,7 +38,9 @@ function NavigationBar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">Robotics PEC</p>
+          <p className="font-bold text-inherit">
+            Robotics <span className="text-accent-blue">PEC</span>
+          </p>
         </NavbarBrand>
       </NavbarContent>
 

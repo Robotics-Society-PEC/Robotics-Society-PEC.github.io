@@ -1,6 +1,12 @@
 import NavigationBar from "@/components/Navbar";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Alata } from "@next/font/google";
+
+const alata = Alata({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -10,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body>
+      <body className={alata.className}>
         <Providers>
           <NavigationBar />
           {children}

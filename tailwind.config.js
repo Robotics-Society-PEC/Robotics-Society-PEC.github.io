@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "accent-blue": "#6157C9",
       },
     },
     darkMode: "class",
