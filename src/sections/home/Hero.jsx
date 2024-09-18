@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import backgroundRobotImage from "@/assets/images/background-robot-hero.png";
+import { Button } from "@/components/ui/button";
 
 function Hero() {
   return (
@@ -15,6 +16,10 @@ function Hero() {
           On-Campus Robotics Society Representing India and Punjab Engineering
           College at an international scale{" "}
         </p>
+        <div className="flex gap-4">
+          <Button variant="outline">Register</Button>
+          <Button>Learn More</Button>
+        </div>
       </div>
       <div className="float-right ">
         <Image
