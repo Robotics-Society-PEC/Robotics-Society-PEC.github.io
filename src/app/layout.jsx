@@ -1,3 +1,4 @@
+import NavigationBar from "@/components/Navbar";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -10,7 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <NavigationBar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
