@@ -2,21 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0F0C29;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,20 +10,6 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.main-heading {
-  font-size: 6rem;
-  line-height: 100%;
-  /* margin-top: 5rem; */
-}
-
-.description {
-  margin-top: 2rem;
-}
-
-.accent-description {
-  @apply text-accent-blue italic
 }
 
 @layer base {
