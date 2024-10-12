@@ -18,6 +18,7 @@
 // };
 // export default config;
 import type { Config } from "tailwindcss";
+import { withUt } from "uploadthing/tw";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 const { nextui } = require("@nextui-org/react");
 
@@ -96,4 +97,4 @@ const config: Config = {
   plugins: [addVariablesForColors, require("tailwindcss-animate")],
 };
 
-export default config;
+export default withUt(config);
