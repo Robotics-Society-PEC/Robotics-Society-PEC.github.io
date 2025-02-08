@@ -3,76 +3,25 @@ import TraitCard from "@/components/TraitCard";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link"; // Import Link from next/link
-
-const traitRawData = [
-  {
-    imgSvg: "/innovate.svg",
-    heading: "Innovate",
-    subHeading1: "The very first step towards success is innovation. ",
-    subHeading2: "Have any ideas, Let's give it a try?",
-  },
-  {
-    imgSvg: "/build.svg",
-    heading: "Build",
-    subHeading1: "Ideas are necessary but not sufficient.",
-    subHeading2: " Come forward, and start building.",
-  },
-  {
-    imgSvg: "/experimental.svg",
-    heading: "Experiment",
-    subHeading1: "Finish implementing the ideas into a real-life model. ",
-    subHeading2: "Why wait then? Let's go and test it.",
-  },
-];
-
-const HelpRawData = [
-  {
-    img: "/help1.png",
-    heading: "Hands-On Learning 🛠️",
-    subheading:
-      "Get practical experience with robotics, electronics, and programming by working on real-world projects—beyond what’s taught in the classroom.",
-  },
-  {
-    img: "/help2.png",
-    heading: "Mentorship & Guidance 👩‍🏫👨‍🏫",
-    subheading:
-      "Learn from experienced seniors and faculty who provide invaluable support, guidance, and mentorship to help you grow. ",
-  },
-  {
-    img: "/help3.png",
-    heading: "Access to Advanced Tools & Resources ⚙️",
-    subheading:
-      "Work with cutting-edge equipment and technology that will boost your skills and give you an edge in your projects.",
-  },
-  {
-    img: "/help4.png",
-    heading: "Teamwork & Leadership Skills 🤝",
-    subheading:
-      "Collaborate with like-minded students, sharpen your teamwork skills, and even take up leadership roles in various projects.",
-  },
-  {
-    img: "/help5.png",
-    heading: "Boost Your Career 🚀",
-    subheading:
-      " Gain experience that looks great on your resume, preparing you for internships, jobs, and higher studies in robotics, AI, or any tech-related field.",
-  },
-];
+import { traitRawData, HelpRawData } from "../raw data/indexPage";
+import teams from "../raw data/teams";
+import TeamCard from "@/components/TeamCard";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen font-alata text-white w-full gap-20">
+    <main className="flex flex-col items-center justify-center min-h-screen font-alata text-white w-full gap-20 mb-10">
       <div className="flex flex-row items-center justify-between px-10 ">
         <div className="absolute inset-0 flex items-center justify-center -z-10">
           <div className="w-[70%] h-[70%] bg-white opacity-5 blur-[150px] transform rotate-45"></div>
         </div>
 
         <div className="flex flex-col items-center text-start gap-10">
-          <p className="text-[120px] tracking-wider leading-[140px]">
+          <p className="text-[120px] tracking-wider leading-[140px] max-2xl:text-[90px]">
             Welcome to <br />
             <b className="text-[#6157C9]">Robotics</b> <br />
             Society <br />
           </p>
-          <p className="text-[28px] tracking-tight font-light">
+          <p className="text-[28px] tracking-tight font-light max-2xl:text-[22px]">
             One of the <b className="text-[#6157C9]">leading</b> Indian
             On-Campus Robotics Society <br />
             Representing India and Punjab Engineering College at an <br />
@@ -93,7 +42,7 @@ export default function Home() {
           width={907}
           height={1272}
           alt=""
-          className=" bg-none"
+          className=" bg-none max-2xl:w-[800px] max-2xl:h-[1000px]"
         />
       </div>
       <div className="flex flex-col items-center justify-center text-center bg-[#6157C966] rounded-3xl px-6 py-5">
@@ -134,13 +83,14 @@ export default function Home() {
         </p>
       </div>
       <div className="flex flex-row items-stretch justify-stretch gap-10 px-6">
-        {traitRawData.map((trait) => {
+        {traitRawData.map((trait, index) => {
           return (
             <TraitCard
               imgSvg={trait.imgSvg}
               heading={trait.heading}
               subHeading1={trait.subHeading1}
               subHeading2={trait.subHeading2}
+              key={index}
             />
           );
         })}
@@ -159,10 +109,64 @@ export default function Home() {
               heading={help.heading}
               subHeading={help.subheading}
               isOdd={index % 2 == 0}
+              key={index}
             />
           );
         })}
       </div>
-    </div>
+      <div className="flex flex-col items-center justify-center text-center gap-12">
+        <p className="text-[48px]">Have a look at some of our projects👀</p>
+        <p className="text-[24px]">
+          At the PEC Robotics Society,{" "}
+          <b className="text-[#6157C9]">innovation is key&#33;</b> 🤖💡 The best
+          way to learn robotics is by <b className="text-[#6157C9]">building</b>{" "}
+          <br />
+          <b className="text-[#6157C9]">your own projects</b>—and that&apos;s
+          exactly what we do&#33; From juniors to seniors, everyone here
+          <br /> creates and shares their amazing work. 🛠️🚀
+          <br /> Check out the cool projects, from{" "}
+          <b className="text-[#6157C9]">AI-driven bots to robotic arms</b>, all
+          made by our talented <br /> members. Each project reflects our passion
+          for <b className="text-[#6157C9]">pushing boundaries</b> and solving
+          real-world <br />
+          problems. 🌟{" "}
+          <b className="text-[#6157C9]">
+            Come explore, get inspired, and start building with us&#33;
+          </b>{" "}
+          🎉
+        </p>
+        <button className="text-[20px] py-2 px-5 bg-[#6157C9CC] rounded-full flex items-center justify-center">
+          Projects🔨
+        </button>
+      </div>
+      <div className="flex flex-col items-center justify-center gap-10">
+        <p className="text-[64px]">Meet The Team</p>
+        <div className="flex flex-row items-center justify-center gap-40">
+          {teams
+            .filter((teamMember) => {
+              return (
+                teamMember.name.includes("Lalit") ||
+                teamMember.name.includes("Shashank")
+              );
+            })
+            .map((teamMember, index) => {
+              return (
+                <TeamCard
+                  img={teamMember.img}
+                  name={teamMember.name}
+                  designation={teamMember.designation}
+                  key={index}
+                />
+              );
+            })}
+        </div>
+        <div className="flex flex-row items-center justify-center gap-10">
+          <p className="text-[36px]">Meet rest of the team🤝.... </p>
+          <button className="py-1 px-10 rounded-full text-[20px] bg-[#6157C9CC]">
+            Team
+          </button>
+        </div>
+      </div>
+    </main>
   );
 }
