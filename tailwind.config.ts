@@ -44,6 +44,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        purple: {
+          100 : "#6157C9"
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
